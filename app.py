@@ -270,8 +270,8 @@ with st.sidebar:
     st.markdown("### ⚙️ AI settings")
     model = st.text_input(
         "Groq model",
-        value=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"),
-        help="You can change this to another chat model available in your Groq account.",
+        value=os.getenv("GROQ_MODEL", st.secrets.get("GROQ_MODEL", "openai/gpt-oss-120b")),
+        help="Use a model ID currently enabled in your Groq account. You can also set GROQ_MODEL in Streamlit Secrets.",
     )
     st.markdown("---")
     st.markdown("### ✨ How it works")
