@@ -1,2 +1,5 @@
-streamlit>=1.38.0
-groq>=0.11.0
+streamlit>=1.40.0
+groq>=0.13.0
+pillow>=10.1.0
+arabic-reshaper>=3.0.0
+python-bidi>=0.4.2
